@@ -56,13 +56,19 @@ button {
     text-align: center;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 button.gameBtn {
     margin: 11px 0;
     background-color: #f5e9b4;
+}
+
+button.resetBtn {
+    margin-top: 40px;
+    background-color: #ccc;
+}
+
+button:hover {
+    cursor: pointer;
+    border-color: #53774a;
 }
 
 .setCountTable {
@@ -83,4 +89,8 @@ button.gameBtn {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
+}
+
+.resetBtnArea {
+    text-align: right;
 }

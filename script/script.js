@@ -28,7 +28,13 @@ new Vue({
     resetGame() {
       this.player1Count = 0;
       this.player2Count = 0;
-    }
+    },
+    reset() {
+      this.player1Count = 0;
+      this.player2Count = 0;
+      this.player1GameCount = 0;
+      this.player2GameCount = 0;
+    },
   },
   computed: {
     player1WonGame() {
