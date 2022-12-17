@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>tennis game count</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="mv">
+      <img src="img/mv.jpg" alt="mv">
+    </div>
+    <main>
+      <div id="counter">
+        <div class="counterWrap">
+          <div class="playerArea">
+            <p class="name">{{ player1Name }}</p>
+            <div v-if="player1WonGame">
+              <button @click="game1" class="gameBtn">Game</button>
+            </div>
+            <div v-else>
+              <p class="point">{{ player1Count }}</p>
+            </div>
+            <button @click="getPoint1">Get point</button>
+          </div>
+          <div class="bar"></div>
+          <div class="playerArea">
+            <p class="name">{{ player2Name }}</p>
+            <div v-if="player2WonGame">
+              <button @click="game2" class="gameBtn">Game</button>
+            </div>
+            <div v-else>
+              <p class="point">{{ player2Count }}</p>
+            </div>
+            <button @click="getPoint2">Get point</button>
+          </div>
+        </div>
+        <table class="setCountTable">
+          <caption>Game Count</caption>
+          <tbody>
+            <tr>
+              <td>{{ player1GameCount }}</td>
+              <td>{{ player2GameCount }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

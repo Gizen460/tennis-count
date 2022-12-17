@@ -1,0 +1,86 @@
+body {
+    background-image: url("../img/bg_grass.jpg");
+    background-size: 25%;
+}
+
+.mv {
+    margin-bottom: 40px;
+}
+
+.mv img {
+    width: 100%;
+}
+
+main {
+    max-width:760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#counter {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.counterWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    width: 30px;
+    height: 8px;
+    background-color: #333;
+}
+
+.playerArea {
+    width: 300px;
+    text-align: center;
+}
+
+.playerArea .name{
+    font-size: 20px;
+}
+
+.playerArea .point{
+    font-size: 40px;
+}
+
+button {
+    padding: 10px 40px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.gameBtn {
+    margin: 11px 0;
+    background-color: #f5e9b4;
+}
+
+.setCountTable {
+    width: 100%;
+    margin-top: 40px;
+    border:1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.setCountTable caption {
+    padding: 10px;
+    background-color: #ccc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.setCountTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
